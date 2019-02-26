@@ -1,24 +1,3 @@
-# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# アプリの概要
+Googleカレンダーからその日の最初の予定を取り出し、最寄駅からその予定地につくためにはどの電車に乗るべきかを自動で算出する。準備にかかる設定時間から起きるべき時刻を通知する。
+毎日のアラームの設定と乗り継ぎ電車を調べる時間と手間を省く。
