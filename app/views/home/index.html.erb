@@ -1,6 +1,6 @@
 <div class="fixed">
   <a><img class="menu" src="assets/menu.png"></a>
-  <a class="login_button" href="#">ログイン</a>
+  <%= menu %>
 </div>
 
 <div>
@@ -10,5 +10,5 @@
 
   <p class="text_center">カレンダーを確認して、電車を調べて、アラームを設定。<br><br>そんな毎日のタスクもうさよなら</p>
 
-  <a href="#" class="start_button horizontal_center">使ってみる（新規登録）</a>
+  <%= link_to("使ってみる（新規登録）", new_user_registration_path, class: "start_button horizontal_center") %>
 </div>
