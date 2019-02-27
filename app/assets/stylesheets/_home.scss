@@ -1,3 +1,15 @@
-.button{
+.start_button{
   @include button;
+}
+
+.login_button{
+  @include button($width: 150px, $height: 60px, $backgroundcolor: gray, $color: black);
+  float: right;
+}
+
+.menu{
+  width: 150px;
+  height: 60px;
+  object-fit: contain;
+  float: right;
 }
