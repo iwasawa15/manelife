@@ -1,6 +1,32 @@
+$input_height: 50px;
+
 .form{
   background: #C4C4C4;
   width: 80%;
-  height: 50%;
   margin: 20px auto;
+  padding: 10px;
+}
+
+label{
+  width: 150px;
+  display: block;
+  float: left;
+  line-height: $input_height
+}
+
+.field{
+  height: $input_height;
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+input{
+  height: $input_height - 20px;
+  margin-left: 100px;
+}
+
+.submit_button{
+  @include button($width: 150px, $height: 60px);
+  margin: 0 auto;
 }

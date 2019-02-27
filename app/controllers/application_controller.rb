@@ -1,6 +1,17 @@
 class ApplicationController < ActionController::Base
-  before_action :authenticate_user!
+  before_action :authenticate_user!, if: :controller?
   before_action :configure_permitted_parameters, if: :devise_controller?
+
+  private
+
+  def controller?
+    print controller_name
+    if controller_name == "home"
+      false
+    else
+      true
+    end
+  end
 
   protected
 

@@ -3,27 +3,17 @@
 <div class="form">
   <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
     <div class="field">
-      <%= f.label :name %><br />
+      <%= f.label :name %>
       <%= f.text_field :name, autofocus: true, autocomplete: "email" %>
     </div>
 
     <div class="field">
-      <%= f.label :email %><br />
+      <%= f.label :email %>
       <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
     </div>
 
     <div class="field">
-      <%= f.label :station %><br />
-      <%= f.text_field :station, autofocus: true, autocomplete: "email" %>
-    </div>
-
-    <div class="field">
-      <%= f.label :preparation_time %><br />
-      <%= f.text_field :preparation_time, autofocus: true, autocomplete: "email" %>
-    </div>
-
-    <div class="field">
-      <%= f.label :password %><br />
+      <%= f.label :password %>
       <%= f.password_field :password, autocomplete: "current-password" %>
     </div>
 
@@ -35,7 +25,7 @@
     <% end %>
 
     <div class="actions">
-      <%= f.submit "Log in" %>
+      <%= f.submit "ログイン", class: "submit_button" %>
     </div>
   <% end %>
 </div>
