@@ -1,0 +1,6 @@
+.time_button{
+  @include button($width: 50%, $height: 100px);
+  margin: auto;
+  margin-top: 300px;
+  font-size: 30px;
+}
