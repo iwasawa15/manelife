@@ -16,9 +16,11 @@ ActiveRecord::Schema.define(version: 2019_02_28_075802) do
     t.string "name"
     t.datetime "date"
     t.string "place"
+    t.bigint "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["date"], name: "index_schedules_on_date"
+    t.index ["user_id"], name: "index_schedules_on_user_id"
   end
 
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
@@ -36,4 +38,5 @@ ActiveRecord::Schema.define(version: 2019_02_28_075802) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "schedules", "users"
 end
