@@ -8,7 +8,7 @@ Rails.application.routes.draw do
     get 'mypage' => 'users/registrations#mypage'
   end
 
-  resources :calendar
+  resources :schedules
 
   root 'home#index'
 end

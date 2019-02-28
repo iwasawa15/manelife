@@ -1,0 +1,25 @@
+<h2>予定の追加</h2>
+
+<div class="form">
+  <%= form_for(@schedule) do |f| %>
+
+    <div class="field">
+      <%= f.label :name %><br />
+      <%= f.text_field :name, autofocus: true %>
+    </div>
+
+    <div class="field">
+      <%= f.label :date %><br />
+      <%= f.datetime_select :date %>
+    </div>
+
+    <div class="field">
+      <%= f.label :place %><br />
+      <%= f.text_field :place %>
+    </div>
+
+    <div class="actions">
+      <%= f.submit "追加" %>
+    </div>
+  <% end %>
+</div>
