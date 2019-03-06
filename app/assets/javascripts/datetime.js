@@ -1,5 +1,5 @@
 $(function(){
-  $('.datetimepicker').datetimepicker({
+    $('.datetimepicker').datetimepicker({
     format : "YYYY/MM/DD HH:mm",
     icons: {
       time: "fa fa-clock-o",
