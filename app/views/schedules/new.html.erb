@@ -8,13 +8,14 @@
       <%= f.text_field :name, autofocus: true %>
     </div>
 
-    <div class="field">
-      <%= f.label :date %><br />
-      <%= f.datetime_select(
-        :date,
-        use_month_numbers: true,
-        :default => Time.at((Time.now.to_i/86400)*86400).utc
-        ) %>
+    <div class="container">
+      <div class="field input-group date" style="position: relative;">
+        <%= f.label :date %><br />
+        <%= f.text_field :date, class: 'form-control datetimepicker'%>
+        <!-- <span class="input-group-addon">
+          <i class="fa fa-calendar"></i>
+        </span> -->
+      </div>
     </div>
 
     <div class="field">
