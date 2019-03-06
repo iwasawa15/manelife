@@ -10,7 +10,11 @@
 
     <div class="field">
       <%= f.label :date %><br />
-      <%= f.datetime_select :date %>
+      <%= f.datetime_select(
+        :date,
+        use_month_numbers: true,
+        :default => Time.at((Time.now.to_i/86400)*86400).utc
+        ) %>
     </div>
 
     <div class="field">
