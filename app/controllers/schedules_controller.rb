@@ -10,7 +10,7 @@ class SchedulesController < ApplicationController
 
   def create
     Schedule.create(schedule_params)
-    redirect_to mypage_path
+    redirect_to action: :index
   end
 
   private
