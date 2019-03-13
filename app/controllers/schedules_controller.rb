@@ -10,6 +10,16 @@ class SchedulesController < ApplicationController
     redirect_to action: :index
   end
 
+  def edit
+    @schedule = Schedule.find(params[:id])
+  end
+
+  def update
+    schedule = Schedule.find(params[:id])
+    schedule.update(schedule_params)
+    redirect_to action: :index
+  end
+
   private
   def schedule_params
     params.require(:schedule).permit(:name, :date, :place).merge(user_id: current_user.id)
