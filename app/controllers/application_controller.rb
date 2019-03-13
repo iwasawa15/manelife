@@ -5,12 +5,18 @@ class ApplicationController < ActionController::Base
   private
 
   def controller?
-    print controller_name
     if controller_name == "home"
       false
     else
       true
     end
+  end
+
+  def authenticate_user!
+    if action_name == "mypage"
+      redirect_to new_user_session_path unless user_signed_in?
+    end
+    super
   end
 
   protected
