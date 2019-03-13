@@ -2,9 +2,10 @@
   @include button;
 }
 
-.login_button{
-  @include button($width: 150px, $height: 60px, $backgroundcolor: gray, $color: black);
+.menu_button{
+  @include button($width: 150px, $height: 40px, $backgroundcolor: gray, $color: white);
   float: right;
+  margin: 10px;
 }
 
 .menu{
@@ -12,4 +13,6 @@
   height: 60px;
   object-fit: contain;
   float: right;
+  padding: 10px;
+  box-sizing: border-box;
 }
